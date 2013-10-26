@@ -1,5 +1,4 @@
-Prisoners-Dilemma-Simulator
-===========================
+# Prisoner's Dilemma Simulator
 
 A Prisoner's Dilemma simulator written in Python.
 
