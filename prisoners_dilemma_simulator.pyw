@@ -168,16 +168,16 @@ class AppForm(QMainWindow):
         self.update_player_list()
 
     def update_player_list(self):
-        dict = {}
+        data = {}
 
         for i in self.strategy_list:
             try:
-                dict[i.name] += 1
+                data[i.name] += 1
             except KeyError:
-                dict[i.name] = 1
+                data[i.name] = 1
 
         self.options_menu.player_list.clear()
-        for k, v in dict.items():
+        for k, v in data.items():
             self.options_menu.player_list.addItem('%s (%d)' % (k, v))
 
     def clear_player_list(self):
