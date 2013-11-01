@@ -59,6 +59,10 @@ except ImportError, e:
                            'Failed to import "%s". This is required for the %s to run.' % (module_name, APP_NAME))
     sys.exit(1)
 
+# Set the global font size for the matplotlib module
+font = {'size': 8}
+matplotlib.rc('font', **font)
+
 class AppForm(QMainWindow):
     """
     This class defines the GUI and behaviour of the main application window.
