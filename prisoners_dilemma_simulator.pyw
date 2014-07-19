@@ -140,7 +140,7 @@ class AppForm(QMainWindow):
 
             for x in range(quantity):
                 self.strategy_list.append(strategy.CDIStrategy(c, d, i))
-    
+
             self.update_player_list()
 
     def run_game(self):
